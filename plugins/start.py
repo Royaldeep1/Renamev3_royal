@@ -45,7 +45,7 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hey, {wish} {message.from_user.first_name }! 😃\n\n
+        txt=f"""Hey, {message.from_user.first_name }! 😃\n\n
 	__Send Me Any Telegram File Or Document And Enter New Name To Rename It__"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
@@ -75,7 +75,7 @@ async def start(client, message):
             new_limit = limit + 209715200
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-	Hey, {wish} {message.from_user.first_name }\n\n
+	Hey, {message.from_user.first_name }!\n\n
 	__You Are A Refered Users Press /start__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
@@ -133,7 +133,7 @@ async def send_doc(client, message):
     conversion = datetime.timedelta(seconds=left)
     ltime = str(conversion)
     if left > 0:
-        await message.reply_text(f"**Flood Control Is Active So Please Wait For** ```{ltime}```", reply_to_message_id=message.id)
+        await message.reply_text(f"**Flood Control Is Active So Please Wait For** ```{ltime}```\n\n**Buy Premium Plan For No Time Gap /buy**", reply_to_message_id=message.id)
     else:
         # Forward a single message
         media = await client.get_messages(message.chat.id, message.id)
