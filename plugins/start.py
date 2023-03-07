@@ -30,11 +30,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/b39c0daa5e286e034
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-	wish = "**__Good Morning ❤__**"
+	wish = "**__Good Morning To You ❤__**"
 elif 12 <= currentTime.hour < 12:
-	wish = '**__Good Afternoon 💙__**'
+	wish = '**__Good Afternoon To You 💙 __**'
 else:
-	wish = '**__Good Evening 🤍__**'
+	wish = '**__Good Evening To You 🤍__**'
 
 # -------------------------------
 
@@ -45,8 +45,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hey, **{message.from_user.first_name } {message.from_user.last_name }**! 😃\n\n
-	**{wish}**\n\n__I Am Royal Rename Bot. I Can Rename Telegram Any File Or Video, Just Send Me And Enter New Name To Rename It.__"""
+        txt=f"""Hey, **{message.from_user.first_name } {message.from_user.last_name }**! 😃\n
+	{wish}\n\n__I Am Royal Rename Bot. I Can Rename Telegram Any File Or Video, Just Send Me And Enter New Name To Rename It.__"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
