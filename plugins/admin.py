@@ -22,13 +22,13 @@ async def warn(c, m):
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
 async def buypremium(bot, message):
-	await message.reply_text("🦋 Select Plan to upgrade...", quote=True, reply_markup=InlineKeyboardMarkup([
+	await message.reply_text(" Select Plan to upgrade...", quote=True, reply_markup=InlineKeyboardMarkup([
 		           [
-				   InlineKeyboardButton("🪙 Silver", callback_data="vip1")
+				   InlineKeyboardButton("💠 **Plan 1** 💠", callback_data="vip1")
 				   ], [
-					InlineKeyboardButton("💫Gold", callback_data="vip2")
+					InlineKeyboardButton("💠 **Plan 2** 💠", callback_data="vip2")
 				   ], [
-					InlineKeyboardButton("💎 Diamond", callback_data="vip3")
+					InlineKeyboardButton("💠 **Plan 3** 💠", callback_data="vip3")
 					]]))
 
 
@@ -54,13 +54,13 @@ async def resetpower(bot, message):
 async def vip1(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit  = 10737418240
-	uploadlimit(int(user_id),10737418240)
-	usertype(int(user_id),"🪙 **SILVER**")
+	inlimit  = 21474836480
+	uploadlimit(int(user_id),21474836480)
+	usertype(int(user_id),"💠 **Plan 1** 💠")
 	addpre(int(user_id))
-	await update.message.edit("Added successfully To Premium Upload limit 10 GB")
-	await bot.send_message(user_id,"Hey you are Upgraded To silver. check your plan here /myplan")
-	await bot.send_message(log_channel,f"⚡️ Plan Upgraded successfully 💥\n\nHey you are Upgraded To silver. check your plan here /myplan")
+	await update.message.edit("Added successfully To Premium Upload limit 20 GB")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 1** 💠.\n\nCheck Your Plan Here /myplan__")
+	await bot.send_message(log_channel,f"__Your Plan Upgraded successfully To 💠 **Plan 1** 💠\n\nCheck Validity Of Your Plan /myplan__")
 
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
@@ -68,10 +68,10 @@ async def vip2(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit = 53687091200
 	uploadlimit(int(user_id), 53687091200)
-	usertype(int(user_id),"💫 **GOLD**")
+	usertype(int(user_id),"💠 **Plan 2** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
-	await bot.send_message(user_id,"Hey you are Upgraded To Gold. check your plan here /myplan")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 2** 💠.\n\nCheck Your Plan Here /myplan__")
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
@@ -79,10 +79,10 @@ async def vip3(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit = 107374182400
 	uploadlimit(int(user_id), 107374182400)
-	usertype(int(user_id),"💎 **DIAMOND**")
+	usertype(int(user_id),"💠 **Plan 3** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
-	await bot.send_message(user_id,"Hey you are Upgraded To Diamond. check your plan here /myplan")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 1** 💠.\n\nCheck Your Plan Here /myplan__")
 
 # CEASE POWER MODE @LAZYDEVELOPER
 
@@ -127,5 +127,5 @@ async def dft(bot,update):
 	uploadlimit(int(user_id), 1288490188)
 	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
-	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 1.2 GB renaming capacity ")
-	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin 🦋<a href='https://t.me/mRiderDM'>**LazyDeveloper**</a>🦋")
+	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 2 GB renaming capacity ")
+	await bot.send_message(user_id,"Your Daily Data limit has been reset successsfully.\n\nCheck your plan here - /myplan\n- Contact Admin - <a href='https://t.me/Royaldwip'>**RoyalDwip**</a>🚩")
