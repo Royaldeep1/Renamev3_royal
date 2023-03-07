@@ -51,7 +51,7 @@ async def start(client, message):
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
                                       [[InlineKeyboardButton("Devoloper 🇮🇳", url="https://t.me/Royaldwip")],
-                                      InlineKeyboardButton("Movie's Channel 🚩", url='https://t.me/Worldofmovies8')],
+                                      [InlineKeyboardButton("Movie's Channel 🚩", url='https://t.me/Worldofmovies8')],
                                       [InlineKeyboardButton("How To Use Me ❓", url='https://t.me/royaldwip')]
                                       ]))
         return
@@ -63,7 +63,7 @@ async def start(client, message):
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
                                              [[InlineKeyboardButton("Devoloper 🇮🇳", url="https://t.me/Royaldwip")],
-                                             InlineKeyboardButton("Movie Channel 🚩", url='https://t.me/worldofmovies8')],
+                                             [InlineKeyboardButton("Movie Channel 🚩", url='https://t.me/worldofmovies8')],
                                              [InlineKeyboardButton("How To Use Me ❓", url='https://t.me/Royaldwip')]
                                           ]))
             except:
