@@ -6,10 +6,10 @@ from helper.database import botdata, find_one, total_user
 
 from helper.progress import humanbytes
 
-@Client.on_message(filters.private & filters.command(["about"]))
+@Client.on_message(filters.private & filters.command(["help"]))
 async def start(client,message):
 	botdata(int(botid))
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"Origional BOT :- <a href='https://t.me/GangsterBaby_renamer_BOT'>Gangster Baby</a>\nCreater :- <a href='https://t.me/LazyDeveloper'>🦋LazyDeveloper🦋</a>\nLanguage :- Python3\nLibrary :- Pyrogram 2.0\nServer :- KOYEB\nTotal Renamed File :- {total_rename}\nTotal Size Renamed :- {humanbytes(int(total_size))} \n\n Thank you **<a href='https://t.me/mRiderDM'>LazyDeveloperr</a>** for your hard work \n\n❤️ we love you <a href='https://t.me/mRiderDM'>**LazyDeveloper**</a> ❤️",quote=True)
+	await message.reply_text(f"**Simple File Rename Bot 🔗\n\nMore Feature Coming Soon.... \n\nAnd Url Uploader Bot Coming Soon \nFor More Update @RoyalDwip\n\nHow To Use!! @RoyalRenameBot\n\nSend Any File Or Document On Bot!! \n\nAnd Send New Name For Rename It Easily 😌\n\nDevoloper From India 🇮🇳\n\nNote - This Bot Make From Indian Users Not For Other Countries.\nLike Bd, Pak, Nepal, Etc.\n\nReport Here For Any Problem @RoyalDwip 🇮🇳**",quote=True)
