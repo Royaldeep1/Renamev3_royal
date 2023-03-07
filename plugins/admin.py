@@ -20,15 +20,15 @@ async def warn(c, m):
                  await m.reply_text("User Not Notfied Sucessfully 😔")
 
 
-@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
+@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["active"]))
 async def buypremium(bot, message):
 	await message.reply_text(" Select Plan to upgrade...", quote=True, reply_markup=InlineKeyboardMarkup([
 		           [
-				   InlineKeyboardButton("💠 **Plan 1** 💠", callback_data="vip1")
+				   InlineKeyboardButton("💠 Plan 1💠", callback_data="vip1")
 				   ], [
-					InlineKeyboardButton("💠 **Plan 2** 💠", callback_data="vip2")
+					InlineKeyboardButton("💠 Plan 2 💠", callback_data="vip2")
 				   ], [
-					InlineKeyboardButton("💠 **Plan 3** 💠", callback_data="vip3")
+					InlineKeyboardButton("💠 Plan 3 💠", callback_data="vip3")
 					]]))
 
 
@@ -52,7 +52,7 @@ async def resetpower(bot, message):
         			
 @Client.on_callback_query(filters.regex('vip1'))
 async def vip1(bot,update):
-	id = update.message.reply_to_message.text.split("/addpremium")
+	id = update.message.reply_to_message.text.split("/active")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 21474836480
 	uploadlimit(int(user_id),21474836480)
@@ -64,7 +64,7 @@ async def vip1(bot,update):
 
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
-	id = update.message.reply_to_message.text.split("/addpremium")
+	id = update.message.reply_to_message.text.split("/active")
 	user_id = id[1].replace(" ", "")
 	inlimit = 53687091200
 	uploadlimit(int(user_id), 53687091200)
@@ -75,14 +75,14 @@ async def vip2(bot,update):
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
-	id = update.message.reply_to_message.text.split("/addpremium")
+	id = update.message.reply_to_message.text.split("/active")
 	user_id = id[1].replace(" ", "")
 	inlimit = 107374182400
 	uploadlimit(int(user_id), 107374182400)
 	usertype(int(user_id),"💠 **Plan 3** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
-	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 1** 💠.\n\nCheck Your Plan Here /myplan__")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 3** 💠.\n\nCheck Your Plan Here /myplan__")
 
 # CEASE POWER MODE @LAZYDEVELOPER
 
