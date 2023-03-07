@@ -5,7 +5,7 @@ from pyrogram import Client , filters
 @Client.on_callback_query(filters.regex('upgrade'))
 async def upgrade(bot,update):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
+	Daily  Upload limit 2 GB
 	Price 0
 	
 	**💠 **Plan 1** 💠** 
@@ -21,7 +21,7 @@ async def upgrade(bot,update):
 	Price Rs 200 🇮🇳
 	
 	
-	Contact Devoloper For Payment Method..."""
+	**Contact Devoloper For Payment Method...**"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
         			[InlineKeyboardButton("Movies Channel",url = "https://t.me/worldofmovies8"),
@@ -32,7 +32,7 @@ async def upgrade(bot,update):
 @Client.on_message(filters.private & filters.command(["buy"]))
 async def upgradecm(bot,message):
 	text = """**Free Plan User**
-	Daily  Upload limit 1.2GB
+	Daily  Upload limit 2 GB
 	Price 0
 	
 	**💠 **Plan 1** 💠** 
@@ -48,9 +48,9 @@ async def upgradecm(bot,message):
 	Price Rs 200 🇮🇳
 	
 	
-	Contact Devoloper For Payment Method..."""
+	**Contact Devoloper For Payment Method...**"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
         			[InlineKeyboardButton("Movies Channel",url = "https://t.me/worldofmovies8"),
-        			InlineKeyboardButton("Help",callback_data = "help")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("Movies Bot",url = "https://t.me/gopalbharbot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
