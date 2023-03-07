@@ -8,55 +8,49 @@ async def upgrade(bot,update):
 	Daily  Upload limit 1.2GB
 	Price 0
 	
-	**🪙 Silver Tier 🪙** 
-	Daily  Upload  limit 10GB
-	Price Rs 66  ind /🌎 0.8$  per Month
+	**💠 **Plan 1** 💠** 
+	Daily  Upload  limit 20GB
+	Price Rs 50 🇮🇳
 	
-	**💫 Gold Tier 💫**
+	**💠 **Plan 2** 💠**
 	Daily Upload limit 50GB
-	Price Rs 100  ind /🌎 1.2$  per Month
+	Price Rs 100 🇮🇳 
 	
-	**💎 Diamond 💎**
+	**💠 **Plan 3** 💠**
 	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	Price Rs 200 🇮🇳
 	
 	
-	Pay Using Upi I'd ```7808912076@paytm```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+	Contact Devoloper For Payment Method..."""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiderDM")], 
-        			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
-        			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
+        			[InlineKeyboardButton("Movies Channel",url = "https://t.me/worldofmovies8"),
+        			InlineKeyboardButton("Movies Bot",url = "https://t.me/gopalbharbot")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
-@Client.on_message(filters.private & filters.command(["upgrade"]))
+@Client.on_message(filters.private & filters.command(["buy"]))
 async def upgradecm(bot,message):
 	text = """**Free Plan User**
 	Daily  Upload limit 1.2GB
 	Price 0
 	
-	**🪙 Silver Tier 🪙** 
-	Daily  Upload  limit 10GB
-	Price Rs 66  ind /🌎 0.8$  per Month
+	**💠 **Plan 1** 💠** 
+	Daily  Upload  limit 20GB
+	Price Rs 50 🇮🇳
 	
-	**💫 Gold Tier 💫**
+	**💠 **Plan 2** 💠**
 	Daily Upload limit 50GB
-	Price Rs 100  ind /🌎 1.2$  per Month
+	Price Rs 100 🇮🇳 
 	
-	**💎 Diamond 💎**
+	**💠 **Plan 3** 💠**
 	Daily Upload limit 100GB
-	Price Rs 206  ind /🌎 2.5$  per Month
+	Price Rs 200 🇮🇳
 	
 	
-	Pay Using Upi I'd ```7808912076@paytm```
-	
-	After Payment Send Screenshots Of 
-        Payment To Admin @mRiderDM"""
+	Contact Devoloper For Payment Method..."""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("ADMIN 🛂",url = "https://t.me/mRiDerDM")], 
-        			[InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9"),
-        			InlineKeyboardButton("Paytm",url = "https://p.paytm.me/xCTH/vo37hii9")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
+        			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
+        			[InlineKeyboardButton("Movies Channel",url = "https://t.me/worldofmovies8"),
+        			InlineKeyboardButton("Help",callback_data = "help")],[InlineKeyboardButton("Cancel",callback_data = "cancel")  ]])
 	await message.reply_text(text = text,reply_markup = keybord)
