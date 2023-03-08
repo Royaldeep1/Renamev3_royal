@@ -59,7 +59,7 @@ async def vip1(bot,update):
 	usertype(int(user_id),"💠 **Plan 1** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 20 GB")
-	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 1** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support \nDate - __{buy_date}__**")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 1** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support**")
 	await bot.send_message(log_channel,f"__Your Plan Upgraded successfully To 💠 **Plan 1** 💠\n\nCheck Validity Of Your Plan /myplan__")
 
 @Client.on_callback_query(filters.regex('vip2'))
@@ -71,7 +71,7 @@ async def vip2(bot,update):
 	usertype(int(user_id),"💠 **Plan 2** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 50 GB")
-	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 2** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support \nDate - __{buy_date}__**")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 2** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support**")
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
@@ -82,7 +82,7 @@ async def vip3(bot,update):
 	usertype(int(user_id),"💠 **Plan 3** 💠")
 	addpre(int(user_id))
 	await update.message.edit("Added successfully To Premium Upload limit 100 GB")
-	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 3** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support \nDate - __{buy_date}__**")
+	await bot.send_message(user_id,"__Hey You are Upgraded To 💠 **Plan 3** 💠.\n\nCheck Your Plan Here /myplan__\n\n**Thanks For Support**")
 
 # CEASE POWER MODE @LAZYDEVELOPER
 
