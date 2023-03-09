@@ -45,8 +45,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        txt=f"""Hey, **{message.from_user.first_name } {message.from_user.last_name }**! 😃\n
-	{wish}\n\n__I Am Royal Rename Bot. I Can Rename Telegram Any File Or Video, Just Send Me And Enter New Name To Rename It.__"""
+        txt=f"""Hey, **__{m.from_user.mention}__**! 😃\n
+	{wish}\n\n__I Am **Royal Rename Bot**. I Can Rename Telegram Any File Or Video, Just Send Me And Enter New Name To Rename It.__"""
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
@@ -75,7 +75,7 @@ async def start(client, message):
             new_limit = limit + 209715200
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
-	Hey, {message.from_user.first_name }!\n\n
+	Hey, {m.from_user.mention}!\n\n
 	__You Are A Refered Users Press /start__
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
