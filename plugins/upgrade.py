@@ -10,17 +10,17 @@ async def upgrade(bot,update):
 	
 	**💠 **Plan 1** 💠** 
 	Daily  Upload  limit 20GB
-	Price Rs 50 🇮🇳
+	Price Rs 35 🇮🇳
 	
 	**💠 **Plan 2** 💠**
 	Daily Upload limit 50GB
-	Price Rs 100 🇮🇳 
+	Price Rs 80 🇮🇳 
 	
 	**💠 **Plan 3** 💠**
 	Daily Upload limit 100GB
-	Price Rs 200 🇮🇳
+	Price Rs 190 🇮🇳
 	
-	
+	__[For Indian Users Not For Other Countries Users.. ]__
 	**Contact Devoloper For Payment Method...**"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
@@ -37,17 +37,17 @@ async def upgradecm(bot,message):
 	
 	**💠 **Plan 1** 💠** 
 	Daily  Upload  limit 20GB
-	Price Rs 50 🇮🇳
+	Price Rs 35 🇮🇳
 	
 	**💠 **Plan 2** 💠**
 	Daily Upload limit 50GB
-	Price Rs 100 🇮🇳 
+	Price Rs 80 🇮🇳 
 	
 	**💠 **Plan 3** 💠**
 	Daily Upload limit 100GB
-	Price Rs 200 🇮🇳
+	Price Rs 190 🇮🇳
 	
-	
+	__[For Indian Users Not For Other Countries Users.. ]__
 	**Contact Devoloper For Payment Method...**"""
 	keybord = InlineKeyboardMarkup([[ 
         			InlineKeyboardButton("Devoloper 🇮🇳",url = "https://t.me/RoyalDwip")], 
